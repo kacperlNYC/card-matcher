@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, p{
+    text-align: center;
+}
+
 #grid {
     margin: auto;
     width: fit-content;
@@ -12,12 +22,19 @@
     border-radius: 10px;
     width: 200px;
     height: 200px;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+
+    transform-style: preserve-3d;
+    transition-duration: 300ms;
+    transform: rotateY(180deg);
 }
 
-.card img {
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-
+    backface-visibility: hidden;
 }
