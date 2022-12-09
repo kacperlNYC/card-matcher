@@ -9,9 +9,11 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body onload="init();">
-    <h1>Card Matching Game</h1>
-    <p>Try your luck by trying to get as many card matches with the least amount of clicks!</p>
-    <p> Clicks: <b id="score">0</b></p>
+    <div class="info">
+        <h1>Card Matching Game</h1>
+        <p>Try your luck by trying to get as many card matches with the least amount of clicks!</p>
+        <p> Clicks: <b id="score">0</b></p>
+    </div>
     <div id="grid">
         <div class="card" id="0" onclick="check(0);"></div>
         <div class="card" id="1" onclick="check(1);"></div>

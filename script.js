@@ -78,4 +78,5 @@ function reset()
         cards[random] = cards[i];
         cards[i] = swap;
     }
+    display();
 }
